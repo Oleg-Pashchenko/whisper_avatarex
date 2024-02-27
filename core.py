@@ -30,4 +30,4 @@ async def voice_to_text(url, openai_api_key):
     await download_audio_async(url, file_path)
     response = await complete_openai(openai_api_key, file_path)
     os.remove(file_path)
-    return response
+    return response['text']
