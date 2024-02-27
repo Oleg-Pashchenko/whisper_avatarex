@@ -19,7 +19,7 @@ async def whisper_handler(request):
 
 
 async def routers():
-    app.router.add_post('/', await whisper_handler)
+    app.router.add_post('/',  whisper_handler)
 
 
 asyncio.run(routers())
