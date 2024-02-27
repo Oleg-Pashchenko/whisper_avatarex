@@ -8,6 +8,7 @@ app = web.Application()
 
 
 async def whisper_handler(request):
+    print('handled')
     data = await request.json()
     print(data)
     return web.json_response(
