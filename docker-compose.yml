@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  prompt_mode:
+    restart: always
+    build:
+      context: .
+    ports:
+      - "9999:9999"
